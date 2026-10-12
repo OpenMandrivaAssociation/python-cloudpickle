@@ -26,9 +26,6 @@ supported by the default pickle module from the Python standard library.
 is shipped over the network to execute on remote hosts, possibly close
 to the data.
 
-%prep -a
-patch -p1 -i %{PATCH0}
-
 %files
 %doc README.md
 %{python_sitelib}/%{module}
