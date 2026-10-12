@@ -8,6 +8,7 @@ License:	BSD-3-Clause
 Group:		Development/Python
 URL:		https://pypi.org/project/cloudpickle/
 Source0:	https://files.pythonhosted.org/packages/source/c/%{module}/%{module}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Patch0:		python-cloudpickle-flit4.patch
 
 BuildSystem:	python
 BuildArch:	noarch
@@ -24,6 +25,9 @@ supported by the default pickle module from the Python standard library.
 %{module} is especially useful for cluster computing where Python code
 is shipped over the network to execute on remote hosts, possibly close
 to the data.
+
+%prep -a
+patch -p1 -i %{PATCH0}
 
 %files
 %doc README.md

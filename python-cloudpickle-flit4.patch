@@ -1,0 +1,34 @@
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -2,14 +2,14 @@
+ requires = ["flit_core"]
+ build-backend = "flit_core.buildapi"
+ 
+-[tool.flit.metadata]
+-module = "cloudpickle"
+-author = "The cloudpickle developer team"
+-author-email='cloudpipe@googlegroups.com'
+-home-page = "https://github.com/cloudpipe/cloudpickle"
+-description-file = "README.md"
++[project]
++name = "cloudpickle"
++version = "3.1.2"
++description = "Extended pickling support for Python objects"
++readme = "README.md"
++license = {text = "BSD-3-Clause"}
++authors = [{name = "The cloudpickle developer team", email = "cloudpipe@googlegroups.com"}]
+ requires-python = ">=3.8"
+-license = "BSD-3-Clause"
+ classifiers = [
+     'Development Status :: 5 - Production/Stable',
+     'Intended Audience :: Developers',
+@@ -31,6 +31,9 @@
+     'Topic :: System :: Distributed Computing',
+ ]
+ 
++[project.urls]
++Homepage = "https://github.com/cloudpipe/cloudpickle"
++
+ [tool.black]
+ line-length = 88
+ target_version = ['py38', 'py39', 'py310', 'py311', 'py312', 'py313']
