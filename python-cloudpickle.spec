@@ -2,7 +2,7 @@
 
 Name:		python-cloudpickle
 Version:	3.1.2
-Release:	1
+Release:	2
 Summary:	Extended pickling support for Python objects
 License:	BSD-3-Clause
 Group:		Development/Python
